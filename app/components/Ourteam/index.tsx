@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import ReactPlayer from "react-player";
 
 const index = () => {
     return (
@@ -8,6 +8,7 @@ const index = () => {
             <h3 className="text-2xl font-medium text-center pt-10 opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor.</h3>
             <div className='grid grid-cols-1 my-16'>
                 <Image src="/images/team/teamimg.png" alt="office-image" height={684} width={1296} />
+                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /> 
             </div>
         </div>
     )
