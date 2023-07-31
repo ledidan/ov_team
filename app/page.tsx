@@ -14,11 +14,13 @@ import Joinus from "./components/Joinus/index";
 import Insta from "./components/Insta/index";
 import Why from "./components/Why";
 import Provide from "./components/Provide";
+import Partners from "./components/Company";
 
 export default function Home() {
   return (
     <main>
       <Banner />
+      <Partners />
       <Provide />
       {/* <Aboutus /> */}
       <Dedicated />
@@ -29,12 +31,13 @@ export default function Home() {
       <Wework />
       <Ourteam />
       <Featured />
+
       {/* <Manage /> */}
       <FAQ />
       <Testimonials />
       {/* <Articles /> */}
       {/* <Joinus /> */}
-      <Insta />
+      {/* <Insta /> */}
     </main>
   );
 }
