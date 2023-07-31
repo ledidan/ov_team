@@ -1,4 +1,4 @@
-export function ProfileThanh() {
+export function page() {
   return (
     <div class="p-24" style={{ marginBottom: "300px" }}>
       <div class="p-8 bg-white shadow mt-24">
@@ -53,4 +53,4 @@ export function ProfileThanh() {
   );
 }
 
-export default ProfileThanh;
+export default page;

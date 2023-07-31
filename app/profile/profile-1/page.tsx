@@ -1,6 +1,6 @@
 
 
-export function ProfilePhu() {
+export function page() {
   return (
     <div className="p-24" style={{marginBottom:"300px"}}>
       <div className="p-8 bg-white shadow mt-24">
@@ -63,4 +63,4 @@ export function ProfilePhu() {
   );
 }
 
-export default ProfilePhu;
+export default page;
