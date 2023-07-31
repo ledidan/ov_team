@@ -19,11 +19,12 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <Aboutus />
+      <Provide />
+      {/* <Aboutus /> */}
       <Dedicated />
       <Digital />
       <Why />
-      <Provide />
+      
       <Beliefs />
       <Wework />
       {/* <Ourteam /> */}

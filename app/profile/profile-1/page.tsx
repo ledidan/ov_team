@@ -1,6 +1,6 @@
 
 
-export function page() {
+export default function page() {
   return (
     <div className="p-24" style={{marginBottom:"300px"}}>
       <div className="p-8 bg-white shadow mt-24">
