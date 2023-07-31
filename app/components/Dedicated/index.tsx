@@ -35,15 +35,11 @@ const Dedicated = () => {
               className="absolute comma-pos hidden lg:block"
             />
             <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
-              Dedicated to help peoples design needs.
+            Luôn mang lại giá trị nhiều hơn mong đợi. 
             </h2>
-            <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-              Quis ipsum suspendisse ultrices gravida risus commodo viverra
-              maecenas accumsan lacus vel facilisis
-            </p>
             <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
               {" "}
-              CEO
+              Le Di Dan, CEO
             </p>
           </div>
         </div>

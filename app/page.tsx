@@ -22,7 +22,7 @@ export default function Home() {
       <Provide />
       {/* <Aboutus /> */}
       <Dedicated />
-      <Digital />
+      {/* <Digital /> */}
       <Why />
       
       <Beliefs />
