@@ -51,4 +51,4 @@ export function page() {
   );
 }
 
-export default page;
+

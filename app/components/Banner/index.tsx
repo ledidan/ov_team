@@ -3,35 +3,33 @@ import Link from "next/link";
 
 const Banner = () => {
     return (
-        <div className='mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 my-16'>
-
-                {/* COLUMN-1 */}
-
-                <div className="mx-auto sm:mx-0">
-                    <div className='py-3 text-center lg:text-start'>
-                        <button className='text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>Software Solution </button>
-                    </div>
-                    <div className="py-3 text-center lg:text-start">
-                        <h1 className='text-6xl lg:text-80xl font-bold text-darkpurple'>
-                            Dedicated to <br /> bring your <br /> service to life.
+        <main>
+            <div className="px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl pt-16 sm:pt-20 pb-20 banner-image">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-semibold text-navyblue sm:text-5xl  lg:text-7xl md:4px lh-96">
+                            Solve problem with an <br /> integrated agency.
                         </h1>
+                        <p className="mt-6 text-lg leading-8 text-bluegray">
+                            Ehya is the Instagram analytics platform teams use to stay focused on the goals, track <br /> engagement for report your business .
+                        </p>
                     </div>
-                    <Link href="#services-section" className='my-7 text-center lg:text-start'>
-                        <button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'>
-                            See us more detail
+
+
+                    <div className="text-center mt-5">
+                        <button type="button" className='text-15px text-white font-medium bg-blue py-5 px-9 mt-2 leafbutton'>
+                            See our portfolio
                         </button>
-                    </Link>
+                        <button type="button" className='text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton'>
+                            More info
+                        </button>
+                        
+                    </div>
+
+                    <Image src={'/images/banner/dashboard.svg'} alt="banner-image" width={1200} height={598} />
                 </div>
-
-                {/* COLUMN-2 */}
-
-                <div className='lg:-m-24 lg:pt-20 hidden lg:block'>
-                    <Image src="/images/banner/banner.svg" alt="hero-image" width={800} height={642} />
-                </div>
-
             </div>
-        </div>
+        </main>
     )
 }
 
