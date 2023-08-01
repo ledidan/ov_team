@@ -131,26 +131,30 @@ export default function MultipleItems() {
       },
     ],
   };
-
+  const titleProject = {
+    top: "0",
+    bottom: "0",
+    right: "0",
+    left: "0",
+  };
   return (
-    <div className="bg-bgblue py-20 marginFeature bg-featured">
+    <div id="features" className="bg-bgLightYellow bg-wework py-20">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
-        <div className="text-center pt-48 pb-10 md:pt-96">
-          <h3 className="text-4xl sm:text-6xl font-bold text-white my-2">
-            Featured works.
+        <div className="text-center pb-10 md:pt-36 pt-32">
+          <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
+            Đây là những
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-white text-opacity-50 lg:mr-48 my-2">
-            Featured works.
+          <h3 className="text-4xl sm:text-6xl font-bold text-blue text-opacity-50 lg:mr-48 my-2">
+            dự án của
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-white text-opacity-25 lg:-mr-32 my-2">
-            Featured works.
+          <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-2">
+            chúng tôi.
           </h3>
         </div>
-
         <Slider {...settings}>
           {postData.map((items, i) => (
             <div key={i}>
-              <div className="bg-transparent m-3 my-10 rounded-3xl imageContainer">
+              <div className="bg-transparent m-3 my-10 rounded-3xl imageContainer ">
                 <Image
                   src={items.imgSrc}
                   alt="gaby"
@@ -162,10 +166,7 @@ export default function MultipleItems() {
                 <Link href={`${items.imgSrc}`} target="_blank">
                   <button
                     className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
-                    style={{
-                      top: "45%",
-                      right: "45%",
-                    }}
+                    style={titleProject}
                   >
                     {items.heading}
                   </button>
@@ -189,10 +190,7 @@ export default function MultipleItems() {
                 <Link href={`${items.imgSrc}`} target="_blank">
                   <button
                     className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
-                    style={{
-                      top: "45%",
-                      right: "45%",
-                    }}
+                    style={titleProject}
                   >
                     {items.heading}
                   </button>
@@ -201,10 +199,9 @@ export default function MultipleItems() {
             </div>
           ))}
         </Slider>
-       
+
         {showMore ? (
           <>
-
             <Slider {...settings}>
               {postData3.map((items, i) => (
                 <div key={i}>
@@ -220,10 +217,7 @@ export default function MultipleItems() {
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
                         className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
-                        style={{
-                          top: "45%",
-                          right: "45%",
-                        }}
+                        style={titleProject}
                       >
                         {items.heading}
                       </button>
@@ -247,10 +241,7 @@ export default function MultipleItems() {
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
                         className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
-                        style={{
-                          top: "45%",
-                          right: "45%",
-                        }}
+                        style={titleProject}
                       >
                         {items.heading}
                       </button>
@@ -274,10 +265,7 @@ export default function MultipleItems() {
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
                         className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
-                        style={{
-                          top: "45%",
-                          right: "45%",
-                        }}
+                        style={titleProject}
                       >
                         {items.heading}
                       </button>
@@ -290,7 +278,23 @@ export default function MultipleItems() {
         ) : (
           <></>
         )}
-        {showMore?(<><button onClick={handleShowMore}>Hide</button></>):(<><button onClick={handleShowMore}>show more</button></>)} 
+        {showMore ? (
+          <>
+            <div className="flex justify-center">
+              <button onClick={handleShowMore} className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+                Thu gọn
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="flex justify-center">
+              <button onClick={handleShowMore}  className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+                Xem thêm
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

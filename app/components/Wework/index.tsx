@@ -92,7 +92,7 @@ export default function MultipleItems() {
 
 
   return (
-    <div className="bg-wework py-32">
+    <div id="team" className="bg-wework py-32">
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 ">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
@@ -110,15 +110,15 @@ export default function MultipleItems() {
       <Slider {...settings}>
         {postData.map((items, i) => (
           <div key={i}>
-            <div className="bg-white m-3 py-11 my-10 text-center shadow-xl rounded-3xl">
+            <div className="bg-white m-3 pb-8 my-10 text-center shadow-xl rounded-3xl rounded-t-xl ">
               <div className="relative">
                 <Image
                   src={items.imgSrc}
                   alt="gaby"
-                  width={502}
-                  height={282}
-                  className="inline-block m-auto  "
-                  style={{}}
+                  width={500}
+                  loading="lazy"
+                  height={500}
+                  className="inline-block m-auto rounded-t-xl "
                 />
               </div>
               <h4 className="text-4xl font-bold pt-14">{items.name}</h4>
@@ -129,7 +129,7 @@ export default function MultipleItems() {
                 href={items.linkProfile}
                 className="text-lg font-semibold group-hover:text-white text-blue hover-underline"
               >
-                View profile
+                Xem thông tin
                 <ChevronRightIcon width={20} height={20} />
               </Link>
             </div>

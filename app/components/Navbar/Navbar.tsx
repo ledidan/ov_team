@@ -14,11 +14,12 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '#aboutus-section', current: false },
-    { name: 'Services', href: '#services-section', current: false },
+    { name: 'Khách hàng', href: '#partners', current: false },
+    { name: 'Dịch vụ', href: '#services', current: false },
+    { name: 'Team', href: '#team', current: false },
+    { name: 'Dự án', href: '#features', current: false },
+    { name: 'Feedback', href: '#feedback', current: false },
     { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
