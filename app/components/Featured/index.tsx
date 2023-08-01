@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { GoArrowDown, GoArrowUp } from "react-icons/go";
 
 // CAROUSEL DATA
 
@@ -116,8 +117,6 @@ export default function MultipleItems() {
     arrows: false,
     autoplay: false,
     speed: 500,
-    // nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-    // prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
     cssEase: "linear",
     responsive: [
       {
@@ -140,14 +139,14 @@ export default function MultipleItems() {
   return (
     <div id="features" className="bg-bgLightYellow bg-wework py-20">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
-        <div className="text-center pb-10 md:pt-36 pt-32">
-          <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
+        <div className="text-center pb-10 md:pt-24 pt-12">
+          <h3 className="text-6xl sm:text-6xl font-bold text-black my-2">
             Đây là những
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-blue text-opacity-50 lg:mr-48 my-2">
+          <h3 className="text-6xl sm:text-6xl font-bold text-blue text-opacity-50 lg:mr-48 my-2">
             dự án của
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-2">
+          <h3 className="text-6xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-2">
             chúng tôi.
           </h3>
         </div>
@@ -165,7 +164,7 @@ export default function MultipleItems() {
 
                 <Link href={`${items.imgSrc}`} target="_blank">
                   <button
-                    className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
+                    className="hidden text-white font-semibold absolute z-10 sm:text-lg md:text-4xl w-100"
                     style={titleProject}
                   >
                     {items.heading}
@@ -189,7 +188,7 @@ export default function MultipleItems() {
 
                 <Link href={`${items.imgSrc}`} target="_blank">
                   <button
-                    className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
+                    className="sm:text-lg md:text-4xl hidden text-white font-semibold absolute z-10 w-100"
                     style={titleProject}
                   >
                     {items.heading}
@@ -216,7 +215,7 @@ export default function MultipleItems() {
 
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
-                        className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
+                        className="sm:text-lg md:text-4xl hidden text-white font-semibold absolute z-10 w-100"
                         style={titleProject}
                       >
                         {items.heading}
@@ -240,7 +239,7 @@ export default function MultipleItems() {
 
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
-                        className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
+                        className="sm:text-lg md:text-4xl hidden text-white font-semibold absolute z-10 w-100"
                         style={titleProject}
                       >
                         {items.heading}
@@ -264,7 +263,7 @@ export default function MultipleItems() {
 
                     <Link href={`${items.imgSrc}`} target="_blank">
                       <button
-                        className="hidden text-white font-semibold absolute z-10 text-4xl w-100"
+                        className="hidden text-white font-semibold absolute z-10 w-100"
                         style={titleProject}
                       >
                         {items.heading}
@@ -281,16 +280,28 @@ export default function MultipleItems() {
         {showMore ? (
           <>
             <div className="flex justify-center">
-              <button onClick={handleShowMore} className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+            <button
+                onClick={handleShowMore}
+                className="relative text-xl py-5 pr-12 pl-10 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue"
+              >
                 Thu gọn
+                <span className="absolute right-4 ">
+                  <GoArrowUp size={26} />
+                </span>
               </button>
             </div>
           </>
         ) : (
           <>
             <div className="flex justify-center">
-              <button onClick={handleShowMore}  className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+              <button
+                onClick={handleShowMore}
+                className="relative text-xl py-5 pr-12 pl-10 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue"
+              >
                 Xem thêm
+                <span className="absolute right-4 ">
+                  <GoArrowDown size={26} />
+                </span>
               </button>
             </div>
           </>

@@ -18,7 +18,7 @@ const navigation: NavigationItem[] = [
     { name: 'Dịch vụ', href: '#services', current: false },
     { name: 'Team', href: '#team', current: false },
     { name: 'Dự án', href: '#features', current: false },
-    { name: 'Feedback', href: '#feedback', current: false },
+    { name: 'Đánh giá KH', href: '#feedback', current: false },
     { name: 'FAQ', href: '#faq-section', current: false },
 ]
 
