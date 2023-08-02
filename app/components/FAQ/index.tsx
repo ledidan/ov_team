@@ -15,9 +15,9 @@ const FAQ = () => {
         Các câu hỏi thường gặp ?
       </h2>
       <div className="w-full px-4 pt-16">
-        {FAQ_DATA.map(({ question, answer }) => {
+        {FAQ_DATA.map(({ question, answer }, index) => {
           return (
-            <div className="mx-auto w-full max-w-5xl rounded-2xl bg-white py-8 px-6 mb-5">
+            <div key={index}  className="mx-auto w-full max-w-5xl rounded-2xl bg-white py-8 px-6 mb-5">
               <Disclosure>
                 {({ open }) => (
                   <>
