@@ -4,7 +4,7 @@ import Dedicated from "./components/Dedicated/index";
 import Digital from "./components/Digital/index";
 import Beliefs from "./components/Beliefs/index";
 import Wework from "./components/Wework/index";
-import Ourteam from "./components/Ourteam/index";
+import Feedback from "./components/Feedback/index";
 import Featured from "./components/Featured/index";
 import Manage from "./components/Manage/index";
 import FAQ from "./components/FAQ/index";
@@ -29,12 +29,12 @@ export default function Home() {
       
       <Beliefs />
       <Wework />
-      <Ourteam />
+      <Feedback />
       <Featured />
 
       {/* <Manage /> */}
       <FAQ />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Articles /> */}
       {/* <Joinus /> */}
       {/* <Insta /> */}

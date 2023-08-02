@@ -112,13 +112,11 @@ const settings = {
 
 export default function Partners() {
   return (
-    <div className="text-center bg-lightpink mx-2">
+    <div id="partners" className="text-center bg-lightpink mx-2" >
       <div className="mx-auto max-w-2xl px-4s sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-8xl sm:text-65xl font-bold text-center mb-24 leading-4">
-          <h1 className="text-4xl font-semibold text-navyblue sm:text-5xl lg:text-6xl md:4px lh-96">
-            <span className="text-blue font-bold">Khách hàng </span>của chúng tôi
-          </h1>
-        </h2>
+        <h1 className="mb-24 text-4xl font-semibold text-navyblue sm:text-5xl lg:text-6xl md:4px lh-96">
+          <span className="text-blue font-bold">Khách hàng </span>của chúng tôi
+        </h1>
         <div>
           <Slider {...settings}>
             {data.map((item, i) => (

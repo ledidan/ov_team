@@ -42,7 +42,7 @@ const Provide = () => {
                 Giải pháp
               </p>
               <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
-                OV Software cung cấp các giải pháp công nghệ hàng đầu thế giới như ReactJS, NextJS, NodeJS, .NET Framework, SQL Server, Cloud...
+                OV Software cung cấp các giải pháp công nghệ hàng đầu thế giới như ReactJS, React Native, NodeJS, .NET Framework, SQL Server, Cloud...
               </h4>
               <Link
                 href={"/"}

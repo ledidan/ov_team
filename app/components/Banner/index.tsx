@@ -20,7 +20,7 @@ const Banner = () => {
                         <button type="button" className='text-15px text-white font-medium bg-blue py-5 px-9 mt-2 leafbutton rounded-md'>
                         Dịch vụ
                         </button>
-                        <button type="button" className='text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-grey leafbutton rounded-md'>
+                        <button style={{borderRadius:"51% 49% 48% 52% / 0% 98% 2% 100% "}} type="button" className='text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-grey leafbutton rounded-md'>
                         Dự án
                         </button>
                         
