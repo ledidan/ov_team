@@ -26,7 +26,7 @@ export default function page() {
           {" "}
           <h1 class="text-4xl font-medium text-gray-700">Lê Di Dan</h1>{" "}
           <p class="font-light text-gray-600 mt-3"> Go Vap, Ho Chi Minh</p>{" "}
-          <p class="mt-8 text-gray-500">Former SoftWare Engineer At Gaco</p>{" "}
+          <p class="mt-8 text-gray-500">Former SoftWare Engineer At Skipli</p>{" "}
           <p class="mt-8 text-gray-500"> Currently SoftWare Engineer At OV </p>{" "}
           <p class="mt-2 text-gray-500">Open University</p>{" "}
         </div>{" "}

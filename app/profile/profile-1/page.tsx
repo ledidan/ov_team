@@ -35,7 +35,7 @@ export default function page() {
           </h1>{" "}
           <p className="font-light text-gray-600 mt-3">Tan Phu, Ho Chi Minh</p>{" "}
           <p className="mt-8 text-gray-500">
-          Former SoftWare Engineer at FPT Software
+          Former SoftWare Engineer at Skipli
           </p>{" "}
           <p className="mt-8 text-gray-500">
           Currently SoftWare Engineer At OV

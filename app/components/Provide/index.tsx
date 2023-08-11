@@ -33,6 +33,13 @@ const Aboutdata: datatype[] = [
 const Provide = () => {
   return (
     <div id="services">
+      <Image
+        src="/images/dedicated/spiral.svg"
+        height={272}
+        width={686}
+        alt="spiral-design"
+        className="absolute left-0 hidden lg:block -z-10"
+      />
       <div className="mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* COLUMN-1 */}
@@ -42,13 +49,15 @@ const Provide = () => {
                 Giải pháp
               </p>
               <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
-                OV Software cung cấp các giải pháp công nghệ hàng đầu thế giới như ReactJS, React Native, NodeJS, .NET Framework, SQL Server, Cloud...
+                OV Software cung cấp các giải pháp công nghệ hàng đầu thế giới
+                như ReactJS, React Native, NodeJS, .NET Framework, SQL Server,
+                Cloud...
               </h4>
               <Link
                 href={"/"}
                 className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links"
               >
-              Liên hệ{" "}
+                Liên hệ{" "}
                 <Image
                   src={"/images/provide/arrow.svg"}
                   alt={"arrow"}
